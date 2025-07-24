@@ -1,0 +1,248 @@
+/* Parte principal de arriba = prsentacion */
+@media only screen and (max-width: 600px) {
+
+  /* Navegación en la parte inferior de la web */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #open-SideBar-btn {
+    display: block;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    border-radius: 12px;
+    width: 50%;
+    position: fixed;
+    bottom: 10%;
+    z-index: 100;
+  }
+
+  nav {
+    position: fixed;
+    bottom: -100%;
+    right: 0;
+    height: 50dvh;
+    width: min(20em, 100%);
+    border: 1px solid white;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    transition: bottom 400ms ease-out;
+    z-index: 100;
+  }
+
+  nav.show {
+    bottom: 10%;
+    height: auto;
+    padding: 10px;
+  }
+
+  nav.show~#overlay {
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+  }
+
+  nav a.accent-link {
+    margin-right: unset;
+  }
+
+  #close-SideBar-btn {
+    display: flex;
+    position: relative;
+    right: 190%;
+  }
+
+  /* Main */
+  .fondo-inicio {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .saludo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    gap: 40px;
+  }
+
+  .boxSaludo {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .tituloWelcome {
+    font-size: 5dvw;
+    font-weight: bold;
+    padding-right: 10px;
+  }
+
+  .descriptionInicial {
+    text-align: center;
+    font-size: 3.5dvw;
+  }
+
+  .mensajeApp {
+    text-align: center;
+    font-size: 2.9dvw;
+    font-weight: 400;
+  }
+
+  .enlaceApp {
+    width: 100%;
+    height: 40px;
+    font-size: 3dvw;
+  }
+
+  /* Imagen de Presentacion */
+  .imgInicial {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boxImgInicial {
+    width: 30%;
+    height: auto;
+    padding: 20px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  /* Apartado de Noticias */
+  .boxEtiquetaNews {
+    padding: 50px 0px 20px 50px;
+  }
+
+  .cardsNews {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxImgCardNew {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .boxImgCardNew img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 0px 0px;
+    object-fit: contain;
+  }
+
+  .moreNews {
+    left: 25%;
+  }
+
+  /* Apartado de Podcasts */
+  .boxEtiquetaPod {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 30px 30px 0px;
+  }
+
+  .reproductorPod {
+    padding: 10px 20px;
+  }
+
+  .boxImgCardPod {
+    width: 100%;
+    height: 200px;
+  }
+
+  .reproductorPod h3 {
+    font-size: 1.2rem;
+  }
+
+  .controlesPod button {
+    width: 35px;
+    aspect-ratio: 1/1;
+    margin: 15px;
+    outline: 0;
+    font-size: 1.2rem;
+  }
+
+  /* cards de podcasts */
+  .boxCardsPod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  /* Apartado de Musica */
+  .boxEtiquetaMusic {
+    padding: 50px 0px 20px 50px;
+  }
+
+  .boxBarMusic {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .barMusic {
+    width: 70%;
+    flex-direction: column-reverse;
+  }
+
+  .reproductorMp3 {
+    width: 95%;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: rgba(228, 228, 228, 0.3);
+  }
+
+  #progreso {
+    margin: 30px 0 20px;
+  }
+
+  .controles button {
+    width: 40px;
+    aspect-ratio: 1/1;
+    margin: 15px;
+    font-size: 1.2rem;
+  }
+
+}
+
+/* tablets */
+@media only screen and (min-width: 601px) and (max-width: 1020px) {
+  nav a{
+    font-size: 2dvb;
+  }
+
+  .cardsNews {
+    width: 100%;
+    margin: 20px;
+  }
+}

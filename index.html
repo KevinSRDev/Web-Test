@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio SENA</title>
+    <link rel="shortcut icon" href="https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png"
+        type="image/png">
+    <link rel="stylesheet" href="css/home/home.css">
+    <link rel="stylesheet" href="css/home/mediaQueries/home-responsive.css">
+</head>
+
+<body>
+    <!-- Pagina de radio SENA -->
+    <a href="#main-content" class="skip-link"> Skip to main content</a>
+
+    <!-- Navegación en la parte inferior de la web -->
+    <header>
+        <button id="open-SideBar-btn" onclick="openSideBar()" aria-label="open sideBar" aria-expanded="false"
+            aria-controls="navBarM">
+            <?xml version="1.0" encoding="UTF-8"?><svg width="40px" height="40px" stroke-width="1" viewBox="0 0 24 24"
+                fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff">
+                <path d="M3 5H21" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path d="M3 12H21" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+                <path d="M3 19H21" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+            </svg>
+        </button>
+        <nav id="navBarM">
+            <ul>
+                <li><button class="btn-close" id="close-SideBar-btn" onclick="closeSideBar()"
+                        aria-label="close sideBar">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="40px" height="40px" stroke-width="1"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff">
+                            <path
+                                d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"
+                                stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button></li>
+                <li class="inicio-li" id="link_inicio"><a class="active-link" aria-current="page" href="">Inicio</a></li>
+                <li id="link_news"><a href="#News">Noticias</a></li>
+                <li id="link_podcasts"><a href="#Podcasts">Podcasts</a></li>
+                <li id="link_musica"><a href="#music">Música</a></li>
+                <li id=""><a href="programacion.html">Programación</a></li>
+                <li id=""><a class="accent-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div id="overlay" onclick="closeSideBar()" aria-hidden="true"></div>
+
+    </header>
+
+    <!-- Contenido  -->
+    <main id="main-content">
+        <div class="fondo-inicio" id="section_one">
+            <div class="saludo">
+                <div class="boxSaludo">
+                    <h1 class="tituloWelcome">Bienvenido a nuestro sitio web</h1>
+                    <p class="descriptionInicial">
+                        Disfruta de nuestra programación, radio en vivo, música y noticias.
+                    </p>
+                    <p class="mensajeApp">
+                        Descargar nuestra app y ten una mejor experiencia a donde quiera que vayas
+                    </p>
+                    <button class="enlaceApp">
+                        App aquí
+                    </button>
+                </div>
+            </div>
+            <div class="imgInicial">
+                <div class="boxImgInicial">
+                    <img src="./src/img/logo.png"
+                        alt="Imagen de Presentacion">
+                </div>
+            </div>
+        </div>
+
+        <!-- Apartado de Noticias -->
+        <div class="boxNews" id="News">
+            <div class="boxEtiquetaNews">
+                <div class="etiquetaNews">
+                    <h2><a href="./noticias.html" class="etiqueta-linkNews">Noticias</a></h2>
+                </div>
+            </div>
+            <div class="boxCardNews">
+                <div class="cardsNews">
+                    <div class="boxImgCardNew">
+                        <img src="./src/img/news/new-01.jpg" alt="News">
+                    </div>
+                    <div class="boxdownCard">
+                        <h3 class="title-News">Titulo de Noticia</h3>
+                        <p class="descritionNews">
+                            Campesinos e indígenas de la subregión de Obando participaron en los Diálogos Territoriales
+                            del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
+                            emprendimiento y el desarrollo rural con identidad y equidad.
+                        </p>
+                        <button class="moreNews" class="btnNews">
+                            Más
+                        </button>
+                    </div>
+                </div>
+                <div class="cardsNews">
+                    <div class="boxImgCardNew">
+                        <img src="./src/img/news/new-02.jpg" alt="News">
+                    </div>
+                    <div class="boxdownCard">
+                        <h3 class="title-News">Titulo de Noticia</h3>
+                        <p class="descritionNews">
+                            Campesinos e indígenas de la subregión de Obando participaron en los Diálogos Territoriales
+                            del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
+                            emprendimiento y el desarrollo rural con identidad y equidad.
+                        </p>
+                        <button class="moreNews">
+                            Más
+                        </button>
+                    </div>
+                </div>
+                <div class="cardsNews">
+                    <div class="boxImgCardNew">
+                        <img src="./src/img/news/new-03.jpg"
+                            alt="News">
+                    </div>
+                    <div class="boxdownCard">
+                        <h3 class="title-News">Titulo de Noticia</h3>
+                        <p class="descritionNews">
+                            Campesinos e indígenas de la subregión de Obando participaron en los Diálogos Territoriales
+                            del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
+                            emprendimiento y el desarrollo rural con identidad y equidad.
+                        </p>
+                        <button class="moreNews">
+                            Más
+                        </button>
+                    </div>
+                </div>
+                <div class="cardsNews">
+                    <div class="boxImgCardNew">
+                        <img src="./src/img/news/new-04.jpg" alt="News">
+                    </div>
+                    <div class="boxdownCard">
+                        <h3 class="title-News">Titulo de Noticia</h3>
+                        <p class="descritionNews">
+                            Campesinos e indígenas de la subregión de Obando participaron en los Diálogos Territoriales
+                            del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
+                            emprendimiento y el desarrollo rural con identidad y equidad.
+                        </p>
+                        <button class="moreNews">
+                            Más
+                        </button>
+                    </div>
+                </div>
+                <div class="cardsNews">
+                    <div class="boxImgCardNew">
+                        <img src="./src/img/news/new-05.jpg"
+                            alt="News">
+                    </div>
+                    <div class="boxdownCard">
+                        <h3 class="title-News">Titulo de Noticia</h3>
+                        <p class="descritionNews">
+                            Campesinos e indígenas de la subregión de Obando participaron en los Diálogos Territoriales
+                            del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
+                            emprendimiento y el desarrollo rural con identidad y equidad.
+                        </p>
+                        <button class="moreNews">
+                            Más
+                        </button>
+                    </div>
+                </div>
+                <div class="cardsNews">
+                    <div class="boxImgCardNew">
+                        <img src="./src/img/news/new-06.jpg"
+                            alt="News">
+                    </div>
+                    <div class="boxdownCard">
+                        <h3 class="title-News">Titulo de Noticia</h3>
+                        <p class="descritionNews">
+                            Campesinos e indígenas de la subregión de Obando participaron en los Diálogos Territoriales
+                            del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
+                            emprendimiento y el desarrollo rural con identidad y equidad.
+                        </p>
+                        <button class="moreNews">
+                            Más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apartado de Podcasts -->
+        <div class="boxPodcasts" id="Podcasts">
+            <div class="boxEtiquetaPod">
+                <div class="etiquetaPod">
+                    <h2>Podcasts</h2>
+                </div>
+            </div>
+            <div class="boxCardsPod">
+                <section class="reproductorPod">
+                    <div class="boxImgCardPod" id="visualPod">
+                        <img src="" alt="Podcasts">
+                    </div>
+                    <h3>Titulo</h3>
+                    <p>Nombre</p>
+                    <audio id="podcasts">
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                    <input type="range" value="0" id="progresoPod" />
+                    <div class="controlesPod">
+                        <button class="atrasP controlP">
+                            <i class="bi bi-rewind-fill"></i>
+                        </button>
+                        <button class="boton-reproducir-pausarP iconoControlP">
+                            <i class="bi bi-play-fill" id="iconoControlP"></i>
+                        </button>
+                        <button class="siguienteP controlP">
+                            <i class="bi bi-fast-forward-fill"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </div>
+
+        <!-- Apartado de Musica -->
+        <div class="boxMusic" id="music">
+
+            <div class="boxMp3">
+                <div class="boxEtiquetaMusic">
+                    <div class="etiquetaMusic">
+                        <h2 class="titleMusic">Música</h2>
+                    </div>
+                </div>
+                <section class="reproductorMp3">
+                    <h1>Titulo</h1>
+                    <p>Nombre</p>
+                    <audio id="cancion">
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                    <input type="range" value="0" id="progreso" />
+                    <div class="controles">
+                        <button class="atras control">
+                            <i class="bi bi-rewind-fill"></i>
+                        </button>
+                        <button class="boton-reproducir-pausar iconoControl">
+                            <i class="bi bi-play-fill" id="iconoControl"></i>
+                        </button>
+                        <button class="siguiente control">
+                            <i class="bi bi-fast-forward-fill"></i>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- Pie de pafina con politicas de seguridad y autor -->
+        <footer>
+            <div class="derechosA">
+                Dereschos de Autor
+            </div>
+            <div class="politicas">
+                Politicas de Privacidad
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="./js/home/home.js"></script>
+    <script src="./js/home/podcasts.js"></script>
+    <script src="./js/home/music.js"></script>
+</body>
+
+</html>
