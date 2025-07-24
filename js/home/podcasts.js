@@ -16,19 +16,19 @@ const botonSiguienteP = document.querySelector('.controlesPod button.siguienteP'
 // Galeria de Podcasts
 const galeriaVisual = [
     {
-        imagen:'../../src/img/pod/podcasts-1.jpg'
+        imagen:'src/img/pod/podcasts-1.jpg'
     },
     {
-        imagen:'../../src/img/pod/podcasts-2.jpg'
+        imagen:'src/img/pod/podcasts-2.jpg'
     },
     {
-        imagen:'../../src/img/pod/podcasts-3.jpg'
+        imagen:'src/img/pod/podcasts-3.jpg'
     },
     {
-        imagen:'../../src/img/pod/podcasts-4.jpg'
+        imagen:'src/img/pod/podcasts-4.jpg'
     },
     {
-        imagen:'../../src/img/pod/podcasts-5.jpg'
+        imagen:'src/img/pod/podcasts-5.jpg'
     }
 ]
 const podcastsGaleria = [
