@@ -94,7 +94,7 @@ nav a:hover {
 }
 #open-SideBar-btn i{
   color: var(--primerColor);
-  font-size: 4rem;
+  font-size: 6dvb;
 }
 #close-SideBar-btn {
   display: none;
