@@ -16,17 +16,17 @@ const canciones = [
     {
         titulo:'Its My Life',
         nombre:'Bon Jovi',
-        fuente:'../../src/music/Bon Jovi  Its My Life Official Music Video.mp3'
+        fuente:'/src/music/Bon Jovi  Its My Life Official Music Video.mp3'
     },
     {
         titulo:'Snap Out Of It',
         nombre:'Arctic Monkeys',
-        fuente:'../../src/music/Arctic Monkeys  Snap Out Of It Official Audio.mp3'
+        fuente:'/src/music/Arctic Monkeys  Snap Out Of It Official Audio.mp3'
     },
     {
         titulo:'Andante',
         nombre:'Achachak',
-        fuente:'../../src/music/Achachak - Andante.mp3'
+        fuente:'/src/music/Achachak - Andante.mp3'
     }
 ]
 
