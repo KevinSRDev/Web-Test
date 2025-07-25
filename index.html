@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wen Test</title>
-    <link rel="shortcut icon" href="./src/img/icon.svg"
-        type="image/png">
+    <link rel="shortcut icon" href="./src/img/icon.svg" type="image/png">
     <link rel="stylesheet" href="css/home/home.css">
     <link rel="stylesheet" href="css/home/home-responsive.css">
 </head>
@@ -32,7 +31,8 @@
                                 stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </button></li>
-                <li class="inicio-li" id="link_inicio"><a class="active-link" aria-current="page" href="">Inicio</a></li>
+                <li class="inicio-li" id="link_inicio"><a class="active-link" aria-current="page" href="">Inicio</a>
+                </li>
                 <li id="link_news"><a href="#News">Noticias</a></li>
                 <li id="link_podcasts"><a href="#Podcasts">Podcasts</a></li>
                 <li id="link_musica"><a href="#music">Música</a></li>
@@ -47,6 +47,12 @@
 
     <!-- Contenido  -->
     <main id="main-content">
+        <div class="boxRadio">
+            <!-- Elfsight Radio Player | Untitled Radio Player -->
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-ad42be4f-bff0-4856-a1aa-b7f2adfbc845" data-elfsight-app-lazy></div>
+        </div>
+
         <div class="fondo-inicio" id="section_one">
             <div class="saludo">
                 <div class="boxSaludo">
@@ -64,8 +70,7 @@
             </div>
             <div class="imgInicial">
                 <div class="boxImgInicial">
-                    <img src="./src/img/logo.png"
-                        alt="Imagen de Presentacion">
+                    <img src="./src/img/logo.png" alt="Imagen de Presentacion">
                 </div>
             </div>
         </div>
@@ -76,7 +81,8 @@
                 <div class="etiquetaNews">
                     <h2>Noticias</h2>
                 </div>
-                <a href="./pages/noticias.html" class="etiqueta-linkNews"><i class="bi bi-box-arrow-in-right"></i>More News</a>
+                <a href="./pages/noticias.html" class="etiqueta-linkNews"><i class="bi bi-box-arrow-in-right"></i>More
+                    News</a>
             </div>
             <div class="boxCardNews">
                 <div id="link-cardsNew" class="cardsNews" onclick="linkViewNoticia()">
