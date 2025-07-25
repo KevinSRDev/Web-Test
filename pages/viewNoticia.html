@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/img/icon.svg"
-        type="image/png">
+    <link rel="shortcut icon" href="./src/img/icon.svg" type="image/png">
     <title>View Noticia</title>
     <link rel="stylesheet" href="../css/viewNoticia/viewNoticia.css">
     <link rel="stylesheet" href="../css/viewNoticia/viewNoticia-responsive.css">
 </head>
+
 <body>
+
+    <div class="boxRadio">
+        <!-- Elfsight Radio Player | Untitled Radio Player -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-ad42be4f-bff0-4856-a1aa-b7f2adfbc845" data-elfsight-app-lazy></div>
+    </div>
+
     <!-- Navegación en la parte inferior de la web -->
     <header>
         <button id="open-SideBar-btn" onclick="openSideBar()" aria-label="open sideBar" aria-expanded="false"
@@ -27,7 +35,8 @@
                                 stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
                         </svg>
                     </button></li>
-                <li class="inicio-li" id="link_inicio"><a class="active-link" aria-current="page" href="../index.html">Inicio</a></li>
+                <li class="inicio-li" id="link_inicio"><a class="active-link" aria-current="page"
+                        href="../index.html">Inicio</a></li>
                 <li id="link_news"><a href="../index.html#News">Noticias</a></li>
                 <li id="link_podcasts"><a href="../index.html#Podcasts">Podcasts</a></li>
                 <li id="link_musica"><a href="../index.html#music">Música</a></li>
@@ -39,8 +48,15 @@
         <div id="overlay" onclick="closeSideBar()" aria-hidden="true"></div>
 
     </header>
-    Hello!
 
+    <main>
+        <div class="boxGlobal">
+            <div class="boxAlert">
+                En construcción ....
+            </div>
+        </div>
+    </main>
     <script src="../js/home/navbar.js"></script>
 </body>
+
 </html>

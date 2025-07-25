@@ -7,7 +7,8 @@
   --textColor-one: black;
   --texColor-two: white;
   --fondo-welcome: #d1a980c6;
-  --white: #f3e9dc9b;
+  --white: #fff;
+  --white-two: #f3e9dc9b;
   --bgNav: #555879;
 }
 
@@ -45,12 +46,8 @@ header {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 70%;
+  top:50%;
   right: 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; */
 }
 nav {
   width: auto;
@@ -60,12 +57,13 @@ nav {
   right: 0;
   border-radius: 15px;
   z-index: 10;
+  border: 1px solid var(--white-two);
 }
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 nav li {
   display: flex;
@@ -81,8 +79,8 @@ nav a {
   border-radius: 15px;
   transition: background-color 250ms ease;
 }
-.accent-link {
-  margin-right: 6px;
+.active-link{
+  background-color: var(--primerColor);
 }
 
 nav a:hover {
@@ -204,6 +202,7 @@ nav a:hover {
 .boxNews {
   width: 100%;
   height: auto;
+  padding-bottom: 50px;
 }
 .boxEtiquetaNews {
   width: 100%;
@@ -350,7 +349,7 @@ nav a:hover {
   width: 100%;
   height: auto;
   padding-bottom: 1rem;
-  background-image: url(https://t3.ftcdn.net/jpg/04/18/87/46/360_F_418874697_trvAoXSfjetoptCXpR8N8XvO3R5eLtL4.jpg);
+  background-image: url(../../src/img/section-podcasts.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(6px);
@@ -379,7 +378,7 @@ nav a:hover {
   height: 500px;
   padding: 0 30px 70px 30px;
   border-radius: 20px;
-  background-color: rgba(228, 228, 228, 0.3);
+  background-color: var(--white-two);
 }
 .reproductorPod h3 {
   font-size: 1.5rem;
@@ -436,7 +435,7 @@ nav a:hover {
   -webkit-appearance: none;
   width: 100%;
   height: 7px;
-  background-color: rgba(189, 189, 189, 0.4);
+  background-color: var(--white-two);
   border-radius: 10px;
   margin: 32px 0 24px;
   cursor: pointer;
@@ -449,7 +448,7 @@ nav a:hover {
   aspect-ratio: 1/1;
   border-radius: 50%;
   outline: 2px solid var(--white);
-  box-shadow: 0 6px 10px rgba(228, 228, 228, 0.4);
+  box-shadow: 0 6px 10px var(--white-two);
 }
 .controlesPod {
   display: flex;
@@ -514,7 +513,7 @@ nav a:hover {
   align-items: center;
   height: 100dvh;
 
-  background-image: url(https://rmc.dk/sites/default/files/styles/background_full_wide/public/node/field_image/rmc_uddannelse_music_management_0.jpg?h=d88fbc39&itok=qdS2rNsO);
+  background-image: url(../../src/img/section-music.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -544,7 +543,7 @@ nav a:hover {
   width: 400px;
   padding: 10px 30px;
   border-radius: 20px;
-  background-color: rgba(228, 228, 228, 0.3);
+  background-color: var(--white-two);
 }
 .reproductorMp3 h1 {
   font-size: 1.5rem;
@@ -562,7 +561,7 @@ nav a:hover {
   -webkit-appearance: none;
   width: 100%;
   height: 7px;
-  background-color: rgba(189, 189, 189, 0.4);
+  background-color: var(--white-two);
   border-radius: 10px;
   margin: 32px 0 24px;
   cursor: pointer;
@@ -570,12 +569,12 @@ nav a:hover {
 #progreso::-webkit-slider-thumb {
   appearance: none;
   -webkit-appearance: none;
-  background-color: var(--segundoColor);
+  background-color: var(--primerColor);
   width: 16px;
   aspect-ratio: 1/1;
   border-radius: 50%;
   outline: 2px solid var(--white);
-  box-shadow: 0 6px 10px rgba(228, 228, 228, 0.4);
+  box-shadow: 0 6px 10px var(--white);
 }
 .controles {
   display: flex;
@@ -608,10 +607,10 @@ nav a:hover {
 footer {
   width: 100%;
   height: 200px;
-  background-color: #00304d;
+  background-color: var(--bgNav);
   color: var(--texColor-two);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   padding-left: 20px;

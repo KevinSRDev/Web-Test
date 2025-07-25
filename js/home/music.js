@@ -27,7 +27,22 @@ const canciones = [
         titulo:'Andante',
         nombre:'Achachak',
         fuente:'src/music/Achachak - Andante.mp3'
-    }
+    },
+    {
+        titulo:'Todo de Ti',
+        nombre:'Rauw Alejandro',
+        fuente:'src/music/Rauw Alejandro - Todo de Ti (Video Oficial)(MP3_320K).mp3'
+    },
+    {
+        titulo:'Mírala Como Anda',
+        nombre:'Los Dotores De La Carranga',
+        fuente:'src/music/Los Dotores De La Carranga - Mírala Como Anda(MP3_160K).mp3'
+    },
+    {
+        titulo:'Es Épico',
+        nombre:'Canserbero',
+        fuente:'src/music/Es Épico - Canserbero _ vídeo motion comic (REMAKE)(MP3_320K).mp3'
+    },
 ]
 
 let indiceCancionActual = 0;

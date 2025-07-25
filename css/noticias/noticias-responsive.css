@@ -16,6 +16,7 @@
     width: 20%;
     position: fixed;
     z-index: 100;
+    right: 0;
   }
 
   nav {
@@ -33,7 +34,7 @@
   }
 
   nav.show {
-    bottom: 10%;
+    bottom: 25%;
     height: auto;
     padding: 10px;
   }
@@ -59,7 +60,7 @@
   #close-SideBar-btn {
     display: flex;
     position: relative;
-    right: 190%;
+    right: 150%;
   }
 
   /* Apartado de Noticias */

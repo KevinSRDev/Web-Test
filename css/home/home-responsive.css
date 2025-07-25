@@ -16,7 +16,7 @@
     border-radius: 20px;
     width: 20%;
     position: fixed;
-    right: 5%;
+    right: 0;
     z-index: 100;
   }
 
@@ -61,7 +61,7 @@
   #close-SideBar-btn {
     display: flex;
     position: relative;
-    right: 190%;
+    right: 150%;
   }
 
   /* Main */

@@ -11,11 +11,15 @@
     display: block;
     backdrop-filter: blur(10px);
     background-color: var(--white);
+    border: 1px solid var(--white);
     border-radius: 20px;
     width: 20%;
     position: fixed;
     z-index: 100;
+    right: 0;
   }
+
+
 
   nav {
     position: fixed;
@@ -32,7 +36,7 @@
   }
 
   nav.show {
-    bottom: 10%;
+    bottom: 25%;
     height: auto;
     padding: 10px;
   }
@@ -58,7 +62,7 @@
   #close-SideBar-btn {
     display: flex;
     position: relative;
-    right: 190%;
+    right: 150%;
   }
 
 }
@@ -71,7 +75,7 @@
 }
 
 /* pantallas de mayor resolucion */
-@media only screen and (min-width: 1021px) and (max-width: 3000px){
+@media only screen and (min-width: 1021px) and (max-width: 3000px) {
   nav a {
     font-size: 1.6dvb;
   }
