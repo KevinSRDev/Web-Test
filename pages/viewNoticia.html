@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Noticia</title>
+    <link rel="stylesheet" href="../css/viewNoticia/viewNoticia.css">
+    <link rel="stylesheet" href="../css/viewNoticia/viewNoticia-responsive.css">
+</head>
+<body>
+    <!-- Navegación en la parte inferior de la web -->
+    <header>
+        <button id="open-SideBar-btn" onclick="openSideBar()" aria-label="open sideBar" aria-expanded="false"
+            aria-controls="navBarM">
+            <i class="bi bi-filter-circle-fill"></i>
+        </button>
+        <nav id="navBarM">
+            <ul>
+                <li><button class="btn-close" id="close-SideBar-btn" onclick="closeSideBar()"
+                        aria-label="close sideBar">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="40px" height="40px" stroke-width="1"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff">
+                            <path
+                                d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"
+                                stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button></li>
+                <li class="inicio-li" id="link_inicio"><a class="active-link" aria-current="page" href="../index.html">Inicio</a></li>
+                <li id="link_news"><a href="../index.html#News">Noticias</a></li>
+                <li id="link_podcasts"><a href="../index.html#Podcasts">Podcasts</a></li>
+                <li id="link_musica"><a href="../index.html#music">Música</a></li>
+                <li id=""><a href="./programacion.html">Programación</a></li>
+                <li id=""><a class="accent-link" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div id="overlay" onclick="closeSideBar()" aria-hidden="true"></div>
+
+    </header>
+    Hello!
+
+    <script src="../js/home/navbar.js"></script>
+</body>
+</html>

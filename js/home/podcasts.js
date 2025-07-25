@@ -120,13 +120,13 @@ progresoPod.addEventListener('input', function(){
 
 botonSiguienteP.addEventListener('click', ()=>{
     indicePodcastsActual = (indicePodcastsActual + 1) % podcastsGaleria.length;
-    visualActual = (visualActual + 1);
+    visualActual = (visualActual + 1) % galeriaVisual.length;
     updateSongInfoPod();
     reproducirPodcasts();
 })
 botonAtrasP.addEventListener('click', ()=>{
     indicePodcastsActual = (indicePodcastsActual - 1 + podcastsGaleria.length) % podcastsGaleria.length;
-    visualActual = (visualActual - 1);
+    visualActual = (visualActual - 1 + galeriaVisual.length) % galeriaVisual.length;
     updateSongInfoPod();
     reproducirPodcasts();
 })

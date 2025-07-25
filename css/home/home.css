@@ -202,7 +202,10 @@ nav a:hover {
 .boxEtiquetaNews {
   width: 100%;
   height: auto;
-  padding: 100px 0px 20px 100px;
+  padding: 100px 100px 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .etiquetaNews {
   width: 150px;
@@ -227,9 +230,21 @@ nav a:hover {
   text-align: center;
 }
 .etiqueta-linkNews{
+  display: flex;
+  gap: 5px;
+  text-align: end;
   text-decoration: none;
   color: var(--segundoColor);
   cursor: pointer;
+  color: var(--primerColor);
+  background-color: var(--white);
+  border: 1px solid var(--primerColor);
+  border-radius: 12px;
+  padding: 5px;
+  transition: 0.5s all;
+}
+.etiqueta-linkNews:hover{
+  transform: scale(1.1);
 }
 
 .boxCardNews {
@@ -240,7 +255,6 @@ nav a:hover {
   height: auto;
 }
 .cardsNews {
-  z-index: -1;
   width: 45%;
   height: auto;
   background-color: var(--segundoColor);
@@ -309,7 +323,23 @@ nav a:hover {
 }
 
 /* Apartado de Podcasts */
-
+.etiquetaPod {
+  width: 150px;
+  height: auto;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid var(--primerColor);
+  border-right: 2px solid var(--primerColor);
+  color: var(--texColor-two);
+  font-weight: lighter;
+  font-size: medium;
+  border-radius: 12px;
+}
+.etiquetaPod h2 {
+  font-weight: 700;
+  text-align: center;
+}
 .boxPodcasts {
   width: 100%;
   height: auto;
@@ -340,7 +370,8 @@ nav a:hover {
   align-items: center;
   color: var(--white);
   width: 600px;
-  padding: 10px 30px;
+  height: 500px;
+  padding: 0 30px 70px 30px;
   border-radius: 20px;
   background-color: rgba(228, 228, 228, 0.3);
 }
@@ -359,31 +390,13 @@ nav a:hover {
   height: auto;
   display: flex;
   justify-content: flex-end;
-  padding: 100px 100px 30px 0px;
-}
-
-.etiquetaPod {
-  width: 150px;
-  height: auto;
-  padding: 6px;
-  display: flex;
-  justify-content: center;
-  border-bottom: 2px solid var(--primerColor);
-  border-right: 2px solid var(--primerColor);
-  color: var(--texColor-two);
-  font-weight: lighter;
-  font-size: medium;
-  border-radius: 12px;
-}
-.etiquetaPod h2 {
-  font-weight: 700;
-  text-align: center;
+  padding: 50px 100px 30px 0px;
 }
 
 /* cards de podcasts */
 .boxCardsPod {
   height: auto;
-  padding: 20px;
+  padding: 70px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,10 +404,8 @@ nav a:hover {
 }
 .boxImgCardPod {
   width: 90%;
-  height: 400px;
+  height: 300px;
   border-radius: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;

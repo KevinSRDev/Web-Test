@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="./src/img/icon.svg"
         type="image/png">
     <link rel="stylesheet" href="css/home/home.css">
-    <link rel="stylesheet" href="css/home/mediaQueries/home-responsive.css">
+    <link rel="stylesheet" href="css/home/home-responsive.css">
 </head>
 
 <body>
@@ -36,8 +36,8 @@
                 <li id="link_news"><a href="#News">Noticias</a></li>
                 <li id="link_podcasts"><a href="#Podcasts">Podcasts</a></li>
                 <li id="link_musica"><a href="#music">Música</a></li>
-                <li id=""><a href="programacion.html">Programación</a></li>
-                <li id=""><a class="accent-link" href="contacto.html">Contacto</a></li>
+                <li id=""><a href="./pages/programacion.html">Programación</a></li>
+                <li id=""><a class="accent-link" href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
@@ -74,11 +74,12 @@
         <div class="boxNews" id="News">
             <div class="boxEtiquetaNews">
                 <div class="etiquetaNews">
-                    <h2><a href="./noticias.html" class="etiqueta-linkNews">Noticias</a></h2>
+                    <h2>Noticias</h2>
                 </div>
+                <a href="./pages/noticias.html" class="etiqueta-linkNews"><i class="bi bi-box-arrow-in-right"></i>More News</a>
             </div>
             <div class="boxCardNews">
-                <div class="cardsNews">
+                <div id="link-cardsNew" class="cardsNews" onclick="linkViewNoticia()">
                     <div class="boxImgCardNew">
                         <img src="./src/img/news/new-01.jpg" alt="News">
                     </div>
@@ -89,12 +90,12 @@
                             del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
                             emprendimiento y el desarrollo rural con identidad y equidad.
                         </p>
-                        <button class="moreNews" class="btnNews">
+                        <button id="btn-link-new" class="moreNews" onclick="linkViewNoticia()">
                             Más
                         </button>
                     </div>
                 </div>
-                <div class="cardsNews">
+                <div id="link-cardsNew" class="cardsNews" onclick="linkViewNoticia()">
                     <div class="boxImgCardNew">
                         <img src="./src/img/news/new-02.jpg" alt="News">
                     </div>
@@ -105,15 +106,14 @@
                             del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
                             emprendimiento y el desarrollo rural con identidad y equidad.
                         </p>
-                        <button class="moreNews">
+                        <button id="btn-link-new" class="moreNews" onclick="linkViewNoticia()">
                             Más
                         </button>
                     </div>
                 </div>
-                <div class="cardsNews">
+                <div id="link-cardsNew" class="cardsNews" onclick="linkViewNoticia()">
                     <div class="boxImgCardNew">
-                        <img src="./src/img/news/new-03.jpg"
-                            alt="News">
+                        <img src="./src/img/news/new-03.jpg" alt="News">
                     </div>
                     <div class="boxdownCard">
                         <h3 class="title-News">Titulo de Noticia</h3>
@@ -122,12 +122,12 @@
                             del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
                             emprendimiento y el desarrollo rural con identidad y equidad.
                         </p>
-                        <button class="moreNews">
+                        <button id="btn-link-new" class="moreNews" onclick="linkViewNoticia()">
                             Más
                         </button>
                     </div>
                 </div>
-                <div class="cardsNews">
+                <div id="link-cardsNew" class="cardsNews" onclick="linkViewNoticia()">
                     <div class="boxImgCardNew">
                         <img src="./src/img/news/new-04.jpg" alt="News">
                     </div>
@@ -138,15 +138,14 @@
                             del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
                             emprendimiento y el desarrollo rural con identidad y equidad.
                         </p>
-                        <button class="moreNews">
+                        <button id="btn-link-new" class="moreNews" onclick="linkViewNoticia()">
                             Más
                         </button>
                     </div>
                 </div>
-                <div class="cardsNews">
+                <div id="link-cardsNew" class="cardsNews" onclick="linkViewNoticia()">
                     <div class="boxImgCardNew">
-                        <img src="./src/img/news/new-05.jpg"
-                            alt="News">
+                        <img src="./src/img/news/new-05.jpg" alt="News">
                     </div>
                     <div class="boxdownCard">
                         <h3 class="title-News">Titulo de Noticia</h3>
@@ -155,15 +154,14 @@
                             del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
                             emprendimiento y el desarrollo rural con identidad y equidad.
                         </p>
-                        <button class="moreNews">
+                        <button id="btn-link-new" class="moreNews" onclick="linkViewNoticia()">
                             Más
                         </button>
                     </div>
                 </div>
-                <div class="cardsNews">
+                <div id="link-cardsNew" class="cardsNews" onclick="linkViewNoticia()">
                     <div class="boxImgCardNew">
-                        <img src="./src/img/news/new-06.jpg"
-                            alt="News">
+                        <img src="./src/img/news/new-06.jpg" alt="News">
                     </div>
                     <div class="boxdownCard">
                         <h3 class="title-News">Titulo de Noticia</h3>
@@ -172,7 +170,7 @@
                             del SENA en Pupiales, construyendo propuestas para fortalecer la formación, el
                             emprendimiento y el desarrollo rural con identidad y equidad.
                         </p>
-                        <button class="moreNews">
+                        <button id="btn-link-new" class="moreNews" onclick="linkViewNoticia()">
                             Más
                         </button>
                     </div>
@@ -258,9 +256,10 @@
 
     </main>
 
-    <script src="./js/home/home.js"></script>
+    <script src="./js/home/navbar.js"></script>
     <script src="./js/home/podcasts.js"></script>
     <script src="./js/home/music.js"></script>
+    <script src="./js/home/homeNoticias.js"></script>
 </body>
 
 </html>
