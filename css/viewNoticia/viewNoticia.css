@@ -7,8 +7,12 @@
   --textColor-one: black;
   --texColor-two: white;
   --fondo-welcome: #d1a980c6;
+<<<<<<< HEAD
   --white: #fff;
   --white-two: #f3e9dc9b;
+=======
+  --white: #f3e9dc9b;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   --bgNav: #555879;
 }
 
@@ -49,12 +53,16 @@ header {
   top: 50%;
   right: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
 nav {
   width: auto;
   background-color: var(--bgNav);
   backdrop-filter: blur(10px);
   position: fixed;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,11 +72,18 @@ nav {
   border: 1px solid var(--white-two);
 }
 
+=======
+  border-radius: 15px;
+  z-index: 10;
+  right: 0;
+}
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
 nav ul {
   list-style: none;
   display: flex;
   align-items: center;
   flex-direction: column;
+<<<<<<< HEAD
   padding: 5px;
 }
 
@@ -129,13 +144,54 @@ nav a:hover{
   font-size: 6dvb;
 }
 
+=======
+}
+nav li {
+  display: flex;
+  padding: 5px;
+}
+nav a {
+  display: flex;
+  text-decoration: none;
+  color: var(--texColor-two);
+  padding: 1em;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 15px;
+  transition: background-color 250ms ease;
+}
+.accent-link {
+  margin-right: 6px;
+}
+
+nav a:hover {
+  background-color: var(--primerColor);
+}
+#open-SideBar-btn {
+  display: none;
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+#open-SideBar-btn i{
+  color: var(--primerColor);
+  font-size: 6dvb;
+}
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
 #close-SideBar-btn {
   display: none;
   background: none;
   border: none;
+<<<<<<< HEAD
   cursor: pointer;
 }
 
+=======
+  padding: 1em;
+  cursor: pointer;
+}
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
 #overlay {
   background: rgb(0, 0, 0, 0.5);
   position: fixed;
@@ -159,9 +215,14 @@ main {
   height: 100dvh;
   padding: 10px;
   display: flex;
+<<<<<<< HEAD
   align-items: center;
   flex-direction: column;
   gap: 20px;
+=======
+  justify-content: center;
+  align-items: center;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   background-color: var(--fondo-welcome);
   background-image: url(/src/img/Maquetando.jpg);
   background-repeat: no-repeat;
@@ -172,6 +233,7 @@ main {
   background-color: var(--white);
   border: 1px solid var(--primerColor);
   border-radius: 12px;
+<<<<<<< HEAD
   padding: 10px;
 }
 
@@ -183,4 +245,6 @@ main {
   border-radius: 12px;
   padding: 10px;
   font-weight: bold;
+=======
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
 }

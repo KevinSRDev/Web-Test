@@ -108,7 +108,10 @@ nav a:hover{
   position: absolute;
   right: 0;
   background-color: var(--primerColor);
+<<<<<<< HEAD
   font-size: 1.05rem;
+=======
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -329,7 +332,11 @@ nav a:hover{
 
 .boxImgCardNew {
   width: 100%;
+<<<<<<< HEAD
   height: 300px;
+=======
+  height: 100%;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   border-radius: 12px 12px 0 0;
   display: flex;
   justify-content: start;

@@ -7,8 +7,12 @@
     --textColor-one: black;
     --texColor-two: white;
     --fondo-welcome: #d1a980c6;
+<<<<<<< HEAD
     --white: #fff;
     --white-two: #f3e9dc9b;
+=======
+    --white: #f3e9dc9b;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
     --bgNav: #555879;
 }
 
@@ -21,6 +25,7 @@
 
 /* NavBar fijada en la parte inferior de la pagina */
 header {
+<<<<<<< HEAD
   width: 100%;
   height: auto;
   position: absolute;
@@ -120,6 +125,83 @@ nav a:hover{
   inset: 0;
   z-index: 9;
   display: none;
+=======
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+nav {
+    width: auto;
+    background-color: var(--bgNav);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    border-radius: 15px;
+    z-index: 10;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav li {
+    display: flex;
+    padding: 5px;
+}
+
+nav a {
+    display: flex;
+    text-decoration: none;
+    color: var(--texColor-two);
+    padding: 1em;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 15px;
+    transition: background-color 250ms ease;
+}
+
+.accent-link {
+    margin-right: 6px;
+}
+
+nav a:hover {
+    background-color: var(--primerColor);
+}
+
+#open-SideBar-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#open-SideBar-btn i {
+    color: var(--primerColor);
+    font-size: 6dvb;
+}
+
+#close-SideBar-btn {
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+#overlay {
+    background: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
 }
 
 /* NOTICIAS GLOBALES */

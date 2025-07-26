@@ -2,11 +2,27 @@
 @media only screen and (max-width: 600px) {
 
   /* Navegación en la parte inferior de la web */
+<<<<<<< HEAD
   #open-SideBar-btn {
     display: block;
     background-color: var(--white);
     border-radius: 5px;
     width: 50px;
+=======
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #open-SideBar-btn {
+    display: block;
+    backdrop-filter: blur(10px);
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    width: 20%;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
     position: fixed;
     right: 0;
     z-index: 100;
@@ -29,7 +45,11 @@
   nav.show {
     bottom: 25%;
     height: auto;
+<<<<<<< HEAD
     padding: 5px;
+=======
+    padding: 10px;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   }
 
   nav.show~#overlay {
@@ -43,6 +63,7 @@
   }
 
   nav a {
+<<<<<<< HEAD
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -69,6 +90,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+=======
+    width: 100%;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   }
 
   nav a.accent-link {
@@ -168,7 +192,11 @@
     width: 100%;
     height: 100%;
     border-radius: 12px 12px 0px 0px;
+<<<<<<< HEAD
     object-fit: cover;
+=======
+    object-fit: contain;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   }
 
   .moreNews {
@@ -261,7 +289,10 @@
     width: 100%;
     margin: 20px;
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   .boxImgCardNew {
     width: 100%;
     height: 400px;
@@ -269,7 +300,11 @@
 }
 
 /* pantallas de mayor resolucion */
+<<<<<<< HEAD
 @media only screen and (min-width: 1021px) and (max-width: 3000px) {
+=======
+@media only screen and (min-width: 1021px) and (max-width: 3000px){
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   nav a {
     font-size: 1.6dvb;
   }

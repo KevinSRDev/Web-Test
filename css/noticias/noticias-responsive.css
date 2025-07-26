@@ -2,6 +2,7 @@
 @media only screen and (max-width: 750px) {
 
   /* Navegación en la parte inferior de la web */
+<<<<<<< HEAD
   #open-SideBar-btn {
     display: block;
     background-color: var(--white);
@@ -10,6 +11,23 @@
     position: fixed;
     right: 0;
     z-index: 100;
+=======
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #open-SideBar-btn {
+    display: block;
+    backdrop-filter: blur(10px);
+    background-color: var(--white);
+    border-radius: 20px;
+    width: 20%;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   }
 
   nav {
@@ -29,7 +47,11 @@
   nav.show {
     bottom: 25%;
     height: auto;
+<<<<<<< HEAD
     padding: 5px;
+=======
+    padding: 10px;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   }
 
   nav.show~#overlay {
@@ -43,6 +65,7 @@
   }
 
   nav a {
+<<<<<<< HEAD
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -69,6 +92,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+=======
+    width: 100%;
+>>>>>>> 287c1eedf6570f235446ec70bfde3f311380b719
   }
 
   nav a.accent-link {
