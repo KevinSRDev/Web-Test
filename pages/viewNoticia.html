@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/icon.svg" type="image/png">
+    <title>View Noticia</title>
+    <link rel="stylesheet" href="../css/viewNoticia/viewNoticia.css">
+    <link rel="stylesheet" href="../css/viewNoticia/viewNoticia-responsive.css">
+</head>
+
+<body>
+
+    <div class="boxRadio">
+        <!-- Elfsight Radio Player | Untitled Radio Player -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-ad42be4f-bff0-4856-a1aa-b7f2adfbc845" data-elfsight-app-lazy></div>
+    </div>
+
+    <!-- Navegación en la parte inferior de la web -->
+    <header>
+        <button id="open-SideBar-btn" onclick="openSideBar()" aria-label="open sideBar" aria-expanded="false"
+            aria-controls="navBarM">
+            <i class="bi bi-justify"></i>
+            <i class="bi bi-arrow-up" style="font-size: 25px;"></i>
+        </button>
+        <nav id="navBarM">
+            <ul>
+                <li><button class="btn-close" id="close-SideBar-btn" onclick="closeSideBar()"
+                        aria-label="close sideBar">
+                        <?xml version="1.0" encoding="UTF-8"?><svg width="40px" height="40px" stroke-width="1"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff">
+                            <path
+                                d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"
+                                stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button></li>
+                <li class="inicio-li" id="link_nav">
+                    <a class="active-link"  href="../index.html">
+                        <i class="bi bi-house-door-fill" id="miIcono"></i>
+                        <span class="texto-oculto" id="miTexto">Inicio</span>
+                    </a>
+                    <a href="../index.html#News">
+                        <i class="bi bi-newspaper" id="miIcono"></i>
+                        <span class="texto-oculto" id="miTexto">Noticias</span>
+                    </a>
+                    <a href="../index.html#Podcasts">
+                        <i class="bi bi-mic-fill" id="miIcono"></i>
+                        <span class="texto-oculto" id="miTexto">Podcasts</span>
+                    </a>
+                    <a href="../index.html#music">
+                        <i class="bi bi-music-note-list" id="miIcono"></i>
+                        <span class="texto-oculto" id="miTexto">Música</span>
+                    </a>
+                    <a href="../pages/programacion.html">
+                        <i class="bi bi-calendar-week-fill" id="miIcono"></i>
+                        <span class="texto-oculto" id="miTexto">Programación</span>
+                    </a>
+                    <a class="accent-link" href="../pages/contacto.html">
+                        <i class="bi bi-person-rolodex" id="miIcono"></i>
+                        <span class="texto-oculto" id="miTexto">Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="overlay" onclick="closeSideBar()" aria-hidden="true"></div>
+
+    </header>
+
+    <main>
+        <div class="boxGlobal">
+            <div class="boxAlert">
+                En construcción ....
+            </div>
+            <button class="atrasNoticias" onclick="backNew()">
+                <i class="bi bi-arrow-return-left"></i><span>Back</span>
+            </button>
+        </div>
+    </main>
+    <script src="../js/home/navbar.js"></script>
+    <script src="../js/viewBackNoticia.js"></script>
+</body>
+
+</html>

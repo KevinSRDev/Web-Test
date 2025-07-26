@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+:root {
+  --primerColor: #D96F32;
+  --segundoColor: #273F4F;
+  --textColor-one: black;
+  --texColor-two: white;
+  --fondo-welcome: #d1a980c6;
+  --white: #fff;
+  --white-two: #f3e9dc9b;
+  --bgNav: #555879;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+/* acces */
+.skip-link {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: var(--primerColor);
+  color: var(--texColor-two);
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+.skip-link:focus {
+  opacity: 1;
+  pointer-events: auto;
+  outline: 3px solid white;
+}
+
+/* NavBar fijada en la parte inferior de la pagina */
+header {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+nav {
+  width: auto;
+  background-color: var(--bgNav);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  right: 0;
+  border-radius: 15px;
+  z-index: 10;
+  border: 1px solid var(--white-two);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+nav li {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
+}
+
+
+nav a {
+  position: relative;
+  /* Necesario para posicionar el texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 12px;
+  height: 40px;
+  color: var(--white);
+  /* Permite que el contenedor se ajuste al contenido */
+}
+nav a:hover{
+  background-color: var(--primerColor);
+  border-radius: 12px;
+}
+
+.texto-oculto {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--primerColor);
+  font-size: 1.05rem;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1;
+}
+#miIcono{
+  font-size: 1rem;
+}
+#miIcono:hover+.texto-oculto {
+  display: flex;
+  right: 35px;
+}
+
+#open-SideBar-btn {
+  display: none;
+  background: none;
+  border: 1px solid var(--primerColor);
+  cursor: pointer;
+}
+
+#open-SideBar-btn i {
+  color: var(--primerColor);
+  font-size: 6dvb;
+}
+
+#close-SideBar-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#overlay {
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: none;
+}
+
+
+/* CONTENIDO */
+main {
+  width: 100%;
+  height: auto;
+  color: var(--segundoColor);
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.boxGlobal{
+  width: 100%;
+  height: 100dvh;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--fondo-welcome);
+  background-image: url(/src/img/Maquetando.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.boxAlert{
+  background-color: var(--white);
+  border: 1px solid var(--primerColor);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.atrasNoticias{
+  border: none;
+  background-color: var(--bgNav);
+  color: var(--white);
+  font-size: 25px;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: bold;
+}
