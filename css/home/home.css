@@ -18,6 +18,11 @@
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
+
+body {
+  background-color: var(--bgNav);
+}
+
 /* acces */
 .skip-link {
   opacity: 0;
@@ -35,6 +40,7 @@
   font-size: 1rem;
   transition: opacity 0.3s ease;
 }
+
 .skip-link:focus {
   opacity: 1;
   pointer-events: auto;
@@ -46,9 +52,10 @@ header {
   width: 100%;
   height: auto;
   position: absolute;
-  top:50%;
+  top: 50%;
   right: 0;
 }
+
 nav {
   width: auto;
   background-color: var(--bgNav);
@@ -59,49 +66,83 @@ nav {
   z-index: 10;
   border: 1px solid var(--white-two);
 }
+
 nav ul {
   list-style: none;
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-nav li {
-  display: flex;
   padding: 5px;
 }
-nav a {
+
+nav li {
   display: flex;
-  text-decoration: none;
-  color: var(--texColor-two);
-  padding: 1em;
-  font-weight: bolder;
-  font-size: large;
-  border-radius: 15px;
-  transition: background-color 250ms ease;
-}
-.active-link{
-  background-color: var(--primerColor);
+  flex-direction: column;
+  padding: 5px;
+  gap: 10px;
 }
 
-nav a:hover {
-  background-color: var(--primerColor);
+
+nav a {
+  position: relative;
+  /* Necesario para posicionar el texto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 12px;
+  height: 40px;
+  color: var(--white);
+  /* Permite que el contenedor se ajuste al contenido */
 }
+nav a:hover{
+  background-color: var(--primerColor);
+  border-radius: 12px;
+}
+
+.texto-oculto {
+  display: none;
+  /* Inicialmente oculto */
+  position: absolute;
+  /* Posiciona el texto debajo del icono */
+  right: 0;
+  background-color: var(--primerColor);
+  /* Fondo semitransparente */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1;
+  /* Asegura que el texto esté por encima del icono */
+}
+#miIcono{
+  font-size: 1rem;
+}
+#miIcono:hover+.texto-oculto {
+  display: block;
+  right: 35px;
+  /* Muestra el texto al pasar el mouse */
+}
+
 #open-SideBar-btn {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
 }
-#open-SideBar-btn i{
+
+#open-SideBar-btn i {
   color: var(--primerColor);
   font-size: 6dvb;
 }
+
 #close-SideBar-btn {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
 }
+
 #overlay {
   background: rgb(0, 0, 0, 0.5);
   position: fixed;
@@ -109,6 +150,7 @@ nav a:hover {
   z-index: 9;
   display: none;
 }
+
 /* RADIO */
 
 
@@ -133,6 +175,7 @@ nav a:hover {
   align-items: center;
   color: var(--texColor-two);
 }
+
 .boxSaludo {
   width: 80%;
   height: auto;
@@ -145,6 +188,7 @@ nav a:hover {
   border-radius: 12px;
   background: var(--fondo-welcome);
 }
+
 .tituloWelcome {
   width: 100%;
   height: auto;
@@ -152,6 +196,7 @@ nav a:hover {
   font-weight: bold;
   padding-right: 30px;
 }
+
 .descriptionInicial {
   width: 100%;
   height: auto;
@@ -159,11 +204,13 @@ nav a:hover {
   font-size: 1.5dvw;
   font-weight: bolder;
 }
+
 .mensajeApp {
   text-align: start;
   font-size: 1.2dvw;
   font-weight: 400;
 }
+
 .enlaceApp {
   width: 200px;
   height: 60px;
@@ -184,18 +231,20 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .boxImgInicial {
   width: 70%;
   height: auto;
   padding: 20px;
   border-radius: 50%;
-  background: white;
+  background: var(--white-two);
 }
+
 .boxImgInicial img {
   object-fit: cover;
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 /* Apartado de Noticias */
@@ -203,7 +252,9 @@ nav a:hover {
   width: 100%;
   height: auto;
   padding-bottom: 50px;
+  background-color: var(--white);
 }
+
 .boxEtiquetaNews {
   width: 100%;
   height: auto;
@@ -212,6 +263,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .etiquetaNews {
   width: 150px;
   height: auto;
@@ -224,17 +276,20 @@ nav a:hover {
   font-weight: lighter;
   font-size: medium;
   border-radius: 12px;
-  box-shadow: -7px 8px 10px 7px gray;
+  box-shadow: -7px 6px 10px 6px var(--primerColor);
   transition: 0.5s all;
 }
-.etiquetaNews:hover{
+
+.etiquetaNews:hover {
   transform: scale(1.1);
 }
+
 .etiquetaNews h2 {
   font-weight: 700;
   text-align: center;
 }
-.etiqueta-linkNews{
+
+.etiqueta-linkNews {
   display: flex;
   gap: 5px;
   text-align: end;
@@ -248,7 +303,8 @@ nav a:hover {
   padding: 5px;
   transition: 0.5s all;
 }
-.etiqueta-linkNews:hover{
+
+.etiqueta-linkNews:hover {
   transform: scale(1.1);
 }
 
@@ -259,6 +315,7 @@ nav a:hover {
   width: 100%;
   height: auto;
 }
+
 .cardsNews {
   width: 45%;
   height: auto;
@@ -268,7 +325,7 @@ nav a:hover {
   flex-direction: column;
   border-radius: 12px;
   margin: 20px;
-  box-shadow: 10px 5px 15px 5px gray;
+  box-shadow: 0 5px 15px 5px var(--primerColor);
 }
 
 .boxImgCardNew {
@@ -279,6 +336,7 @@ nav a:hover {
   justify-content: start;
   align-items: start;
 }
+
 .boxImgCardNew img {
   width: 100%;
   height: 100%;
@@ -296,6 +354,7 @@ nav a:hover {
   border-radius: 12px;
   padding: 20px;
 }
+
 .title-News {
   width: 100%;
   height: auto;
@@ -304,6 +363,7 @@ nav a:hover {
   margin-bottom: 20px;
   padding: 10px;
 }
+
 .descritionNews {
   color: var(--texColor-two);
   margin-bottom: 20px;
@@ -312,6 +372,7 @@ nav a:hover {
   width: 100%;
   height: auto;
 }
+
 .moreNews {
   position: relative;
   left: 20%;
@@ -341,10 +402,12 @@ nav a:hover {
   font-size: medium;
   border-radius: 12px;
 }
+
 .etiquetaPod h2 {
   font-weight: 700;
   text-align: center;
 }
+
 .boxPodcasts {
   width: 100%;
   height: auto;
@@ -355,6 +418,7 @@ nav a:hover {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
+
 .boxPodcasts::before {
   content: "";
   position: absolute;
@@ -365,9 +429,11 @@ nav a:hover {
   left: 0;
   z-index: -1;
 }
+
 .boxPodcasts {
   z-index: 3;
 }
+
 .reproductorPod {
   display: flex;
   flex-direction: column;
@@ -380,16 +446,19 @@ nav a:hover {
   border-radius: 20px;
   background-color: var(--white-two);
 }
+
 .reproductorPod h3 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.6;
 }
+
 .reproductorPod p {
   font-size: 1rem;
   font-weight: 400;
   opacity: 0.6;
 }
+
 .boxEtiquetaPod {
   width: 100%;
   height: auto;
@@ -407,6 +476,7 @@ nav a:hover {
   align-items: center;
   flex-wrap: wrap;
 }
+
 .boxImgCardPod {
   width: 90%;
   height: 300px;
@@ -415,12 +485,14 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .boxImgCardPod img {
   width: auto;
   height: 100%;
   object-fit: contain;
   border-radius: 10px;
 }
+
 .boxdownCard {
   width: 100%;
   height: auto;
@@ -430,6 +502,7 @@ nav a:hover {
   align-items: center;
   color: var(--texColor-two);
 }
+
 #progresoPod {
   appearance: none;
   -webkit-appearance: none;
@@ -440,6 +513,7 @@ nav a:hover {
   margin: 32px 0 24px;
   cursor: pointer;
 }
+
 #progresoPod::-webkit-slider-thumb {
   appearance: none;
   -webkit-appearance: none;
@@ -450,10 +524,12 @@ nav a:hover {
   outline: 2px solid var(--white);
   box-shadow: 0 6px 10px var(--white-two);
 }
+
 .controlesPod {
   display: flex;
   justify-content: center;
 }
+
 .controlesPod button {
   width: 50px;
   aspect-ratio: 1/1;
@@ -471,6 +547,7 @@ nav a:hover {
 .controlesPod .iconoControlP {
   transform: scale(1.3);
 }
+
 .controlesPod .iconoControlP:hover {
   transform: scale(1.4);
 }
@@ -480,6 +557,7 @@ nav a:hover {
   width: 100%;
   height: auto;
 }
+
 .boxEtiquetaMusic {
   position: absolute;
   top: 0%;
@@ -489,6 +567,7 @@ nav a:hover {
   justify-content: flex-start;
   padding: 100px 0px 20px 100px;
 }
+
 .etiquetaMusic {
   width: 150px;
   height: auto;
@@ -502,6 +581,7 @@ nav a:hover {
   font-size: medium;
   border-radius: 12px;
 }
+
 .titleMusic {
   font-weight: 700;
   text-align: center;
@@ -520,6 +600,7 @@ nav a:hover {
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 }
+
 .boxMp3::before {
   content: "";
   position: absolute;
@@ -530,10 +611,12 @@ nav a:hover {
   left: 0;
   z-index: -1;
 }
+
 .boxMp3 {
   position: relative;
   z-index: 3;
 }
+
 .reproductorMp3 {
   display: flex;
   flex-direction: column;
@@ -545,11 +628,13 @@ nav a:hover {
   border-radius: 20px;
   background-color: var(--white-two);
 }
+
 .reproductorMp3 h1 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.6;
 }
+
 .reproductorMp3 p {
   font-size: 1rem;
   font-weight: 400;
@@ -566,6 +651,7 @@ nav a:hover {
   margin: 32px 0 24px;
   cursor: pointer;
 }
+
 #progreso::-webkit-slider-thumb {
   appearance: none;
   -webkit-appearance: none;
@@ -576,10 +662,12 @@ nav a:hover {
   outline: 2px solid var(--white);
   box-shadow: 0 6px 10px var(--white);
 }
+
 .controles {
   display: flex;
   justify-content: center;
 }
+
 .controles button {
   width: 50px;
   aspect-ratio: 1/1;
@@ -594,24 +682,27 @@ nav a:hover {
   cursor: pointer;
   transition: all 0.1s linear;
 }
+
 .controles .control:hover {
   transform: scale(1.1);
 }
+
 .controles .iconoControl {
   transform: scale(1.3);
 }
+
 .controles .iconoControl:hover {
   transform: scale(1.4);
 }
+
 /* Pide de pagina con respectiva información */
 footer {
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: var(--bgNav);
   color: var(--texColor-two);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding-left: 20px;
 }

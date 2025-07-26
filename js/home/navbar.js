@@ -1,7 +1,16 @@
 const openButton = document.getElementById('open-SideBar-btn')
 const navbar = document.getElementById('navBarM')
 const media = window.matchMedia("(width < 600px)")
+const icono = document.getElementById('miIcono');
+const texto = document.getElementById('miTexto');
 
+icono.addEventListener('mouseover', () => {
+  texto.style.display = 'flex';
+});
+
+icono.addEventListener('mouseout', () => {
+  texto.style.display = 'none';
+});
 
 media.addEventListener('change', (e) => updateNavbar(e))
 
